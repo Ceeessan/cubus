@@ -2,3 +2,7 @@ body {
   margin: 0;
   background: red;
 }
+
+.rte.inline-richtext a {
+  text-decoration: none;
+}
