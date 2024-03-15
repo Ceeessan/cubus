@@ -2,3 +2,35 @@ body {
   margin: 0;
   background: red;
 }
+
+/* .footer__blocks-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+
+        li{
+            padding: 8px 0;
+        }
+    }
+
+    h3{
+        font-weight: bold;
+    }
+
+    a{
+        color:rgb(0, 0, 0);
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: rgb(114, 110, 110);
+        }
+    }
+} */
+
+footer .link {
+  color: rgb(0, 0, 0);
+}
