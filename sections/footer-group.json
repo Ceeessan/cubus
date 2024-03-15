@@ -4,9 +4,45 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_8pJyJp": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Kundservice",
+            "menu": "footer"
+          }
+        },
+        "link_list_QjCWrF": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Handla hos Cubus",
+            "menu": "footer"
+          }
+        },
+        "link_list_C8xm4J": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Om Cubus",
+            "menu": "footer"
+          }
+        },
+        "link_list_hVrChL": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Cubus Friends",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_8pJyJp",
+        "link_list_QjCWrF",
+        "link_list_C8xm4J",
+        "link_list_hVrChL"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
