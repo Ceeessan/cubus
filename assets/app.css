@@ -1,8 +1,29 @@
+.footer {
+  background-color: #f1f2f3;
+}
+.footer .footer__column.footer__column--info {
+  align-items: center;
+  border: 1px solid rgb(224, 224, 224);
+  background-color: white;
+  margin: 16px 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+.footer .footer__column.footer__column--info ul {
+  padding: 8px 0;
+}
+.collection-hero__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.utility-bar {
+  background-color: black;
+}
+.utility-bar p {
+  color: white;
+  font-weight: bold;
+}
 body {
   margin: 0;
-  background: red;
-}
-
-.rte.inline-richtext a {
-  text-decoration: none;
 }
