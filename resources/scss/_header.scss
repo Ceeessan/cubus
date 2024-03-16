@@ -1,7 +1,43 @@
-.index_wrapper{
-    background-color: red;
-    width: calc(100% - 200px);
-    margin:auto;
-    max-width: 1200px;
+header{
+    width: 100%;
+    padding:0;
+    padding-left: 0;
+    padding-right: 0;
+
+
+    nav{
+
+        padding-top:1rem;
+
+        font-weight: bold;
+        color:black;
+
+        ul{
+            color:black;
+
+
+            li{
+                color:black;
+                text-decoration:none;
+            }
+        }
+
+
+    }
+
+    .caption-large{
+        display:none;
+    }
+}
+
+
+.utility-bar--bottom-border{
+    background-color: black;
+
+    span{
+        color:white;
+    }
+    
+
 
 }
