@@ -1,0 +1,81 @@
+.index_wrapper{
+
+    width: calc(100% - 200px);
+    margin:auto;
+    margin-top: 3rem;
+
+    .mix-and-match{
+        margin-bottom: -5px;
+    }
+
+    .banner__box{
+
+        .banner__heading{
+            font-weight: bold;
+        }
+
+    }
+
+    .banner__buttons--multiple{
+        margin-bottom: -80px;
+
+        .bathing-btn{
+            font-weight:bold;
+            font-size:9.5px;
+            letter-spacing:1px;
+            border:none;
+            padding-left: 10px;
+            padding-right: 10px;
+            min-width: 3rem;
+            background-color: white;
+            
+
+            .bathing-btn::before{
+                border: var(--buttons-border-width);
+        
+            }
+
+        }
+
+        .button{
+            min-width: 2.5rem;
+            font-size: 10px;
+            font-weight:bold;
+            flex-grow:0;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:hover{
+                border:none;
+            }
+        }
+    }
+
+    .title{
+        display:none;
+    }
+
+    .c-style{
+        padding-left: 0;
+        padding-right:0;
+    }
+
+    .click-icon-container{
+        display:flex;
+        justify-content:center;
+        flex-direction:row;
+        vertical-align: baseline;
+
+        svg{
+            padding:2rem;
+        }
+
+        .click-and-collect{
+            
+    
+        }
+
+    }
+
+
+}
