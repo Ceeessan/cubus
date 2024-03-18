@@ -1,8 +1,11 @@
+
+
 header{
     width: 100%;
     padding:0;
-    padding-left: 0;
-    padding-right: 0;
+    margin-right: 0;
+    margin-left:0;
+   
 
 
     nav{
@@ -41,3 +44,22 @@ header{
 
 
 }
+
+
+@media screen and (max-width: 990px) {
+
+header{
+    display:flex !important;
+
+    .header__heading{
+        margin-right: 450px;
+   
+    }
+
+    .icon-cart{
+        padding-right:10px;
+    }
+
+}
+
+  }
