@@ -48,7 +48,6 @@
           >
             {%- if filter_type == 'horizontal' and results.filters != empty -%}
               <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
-                {{ 'products.facets.filter_by_label' | t }}
               </h2>
             {%- endif -%}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
@@ -516,11 +515,15 @@
 
         {%- if filter_type == 'horizontal' -%}
           {% comment %} Sorting and product count are the last elements when filter type is horizontal {% endcomment %}
+          <div class="sort-product-count">
+
           {%- if enable_sorting -%}
+
+
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field">
                 <h2 class="facet-filters__label caption-large text-body">
-                  <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+                  <label for="SortBy"></label>
                 </h2>
                 <div class="select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
@@ -569,6 +572,9 @@
             </h2>
             {%- render 'loading-spinner' -%}
           </div>
+
+        </div>
+
         {%- endif -%}
       </form>
     </facet-filters-form>

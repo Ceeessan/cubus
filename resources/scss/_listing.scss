@@ -1,8 +1,19 @@
-.collection-hero__title{
+.collection-hero__text-wrapper{
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
+    margin-bottom: 20px;
+
+    .collection-hero__title{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    p{
+        font-weight: 400;
+        color: black;
+        padding: 0 100px;
+    }
 }
+
 
 .utility-bar{
     background-color: black;
@@ -10,5 +21,135 @@
     p{
         color: white;
         font-weight: bold;
+    }
+}
+
+#main-collection-filters{
+    details{
+        border: 1px solid black;
+        padding: 5px 15px;
+
+        summary{
+            margin: 0;
+
+            span{
+                margin: 0 10px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#FacetFiltersForm{
+    gap: initial;
+
+    .facet-filters__field{
+        .select{
+            border: 1px solid black;
+            padding: 5px 15px;
+
+            select{
+                font-weight: bold;
+            }
+    
+            svg{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .facet-filters__sort:focus-visible{
+        box-shadow: none;
+        outline: none;
+    }
+
+    .facets__wrapper{
+        display: grid;
+        gap: 0;
+        justify-content: start;
+
+        .facets__disclosure{
+            margin-right: 1rem;
+        }
+
+        details:nth-of-type(1){
+            grid-column: 1;
+        }
+
+        details:nth-of-type(2){
+            grid-column: 2;
+        }
+    }
+
+}
+
+
+.sort-product-count{
+    .product-count{
+        margin-top: 20px;
+    }
+}
+
+.breadcrumbs {
+    padding: 0 4.5rem;
+
+    .breadcrumb-list {
+        list-style: none; 
+        margin: 0; 
+        
+        .breadcrumb-item {
+            display: inline-block;
+            margin-right: 5px; 
+
+            a {
+                text-decoration: none; 
+                color: #333;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+
+                &:active {
+                    font-weight: bold; 
+                  }
+                  
+            }
+        }
+    }
+}
+
+.card__inner{
+    .card__content{
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;    
+    }
+}
+
+
+.card__content{
+    .card__badge{
+    align-self: auto;
+    grid-row-start: auto;
+
+    .badge{
+        background-color: rgb(233, 0, 41);
+        border-radius: 0%;
+    }
+    }
+    
+    .card__information{
+        a:hover{
+            text-decoration: none;
+        }
+
+        .price{
+            font-weight: bold;
+        }
+
+        .price__sale{
+            .price-item--sale{
+                color: rgb(233, 0, 41);
+            }
+        }
     }
 }

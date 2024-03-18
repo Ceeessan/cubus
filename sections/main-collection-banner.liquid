@@ -16,6 +16,7 @@
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas tempus accumsan. In gravida neque lorem, vel pharetra mauris aliquet ut. </p>
 
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
@@ -43,6 +44,14 @@
       </div>
     {%- endif -%}
   </div>
+</div>
+
+<div class="breadcrumbs">
+  <ul class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="/">Hem</a></li>
+      <li class="breadcrumb-item">/</li> 
+      <li class="breadcrumb-item"><a href="/products">Dam</a></li>
+  </ul>
 </div>
 
 {% schema %}
