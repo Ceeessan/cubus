@@ -85,12 +85,14 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                <p
+                {% comment %} <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
                 >
                   {{- block.settings.text -}}
-                </p>
+                </p> {% endcomment %}
+                <svg class="heart-icon-product" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M178 32c-20.65 0-38.73 8.88-50 23.89C116.73 40.88 98.65 32 78 32a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 220.66 240 164 240 94a62.07 62.07 0 0 0-62-62m-50 174.8C109.74 196.16 32 147.69 32 94a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8"/></svg>
+            
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -100,6 +102,7 @@
                     </h2>
                   </a>
                 </div>
+                
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -114,14 +117,14 @@
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                   </div>
                 {%- endif -%}
-                <div class="product__tax caption rte">
+                {% comment %} <div class="product__tax caption rte">
                   {%- if cart.taxes_included -%}
                     {{ 'products.product.include_taxes' | t }}
                   {%- endif -%}
                   {%- if shop.shipping_policy.body != blank -%}
                     {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                   {%- endif -%}
-                </div>
+                </div> {% endcomment %}
                 <div {{ block.shopify_attributes }}>
                   {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                   {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -136,6 +139,7 @@
                   id="Inventory-{{ section.id }}"
                   role="status"
                 >
+       
                   {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
                     {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
                       {%- if product.selected_or_first_available_variant.inventory_quantity
@@ -386,6 +390,8 @@
                       </span>
                     {%- endif -%}
                   </div>
+
+                 
                   {%- if product.quantity_price_breaks_configured? -%}
                     <volume-pricing class="parent-display no-js-hidden" id="Volume-{{ section.id }}">
                       {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
@@ -505,6 +511,8 @@
                   class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
                   data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary"
                 >
+
+                
                   {%- if recommendations.performed and recommendations.products_count > 0 -%}
                     <aside
                       aria-label="{{ 'accessibility.complementary_products' | t }}"
@@ -536,6 +544,7 @@
                             | divided_by: block.settings.products_per_page
                             | ceil
                           -%}
+                        
                           <div
                             id="Slider-{{ block.id }}"
                             class="contains-card contains-card--product complementary-slider grid grid--1-col slider slider--everywhere"
@@ -594,6 +603,8 @@
                                   <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
                                   <span class="slider-counter--total">{{ number_of_slides }}</span>
                                 {%- else -%}
+
+                            
                                   <div class="slideshow__control-wrapper">
                                     {%- for i in (1..number_of_slides) -%}
                                       <button
@@ -611,6 +622,8 @@
                                   </div>
                                 {%- endif -%}
                               </div>
+
+                            
                               <button
                                 type="button"
                                 class="slider-button slider-button--next"
@@ -651,6 +664,8 @@
           {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
         </div>
       {%- endif -%}
+
+     
     </div>
 
     {% render 'product-media-modal', variant_images: variant_images %}
@@ -677,7 +692,11 @@
             <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
             {{ block.settings.page.content }}
           </div>
+
+      
         </div>
+
+      
       </modal-dialog>
     {%- endfor -%}
 
@@ -692,6 +711,7 @@
       </script>
       <script src="{{ 'product-model.js' | asset_url }}" defer></script>
     {%- endif -%}
+  
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -725,6 +745,7 @@
         assign seo_media = product.featured_media
       endif
     -%}
+   
 
     <script type="application/ld+json">
       {
@@ -771,6 +792,17 @@
       }
     </script>
   </div>
+
+  {% if template.name == 'product' %}
+    <div class="info-text-shopping">
+    <p class="shop-now-text"> Shoppa nu. Betala inom 60 dagar med <span class="klarna-text">Klarna </span>. <span class="read-more-text"> Läs mer </span> </p>
+
+    <p class="text-with-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M13.488 3.43a.75.75 0 0 1 .081 1.058l-6 7a.75.75 0 0 1-1.1.042l-3.5-3.5A.75.75 0 0 1 4.03 6.97l2.928 2.927l5.473-6.385a.75.75 0 0 1 1.057-.081Z" clip-rule="evenodd"/></svg> Öppet köp i 100 dagar</p>
+    <p class="text-with-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M13.488 3.43a.75.75 0 0 1 .081 1.058l-6 7a.75.75 0 0 1-1.1.042l-3.5-3.5A.75.75 0 0 1 4.03 6.97l2.928 2.927l5.473-6.385a.75.75 0 0 1 1.057-.081Z" clip-rule="evenodd"/></svg> Gratis retur i butik</p>
+    <p class="text-with-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M13.488 3.43a.75.75 0 0 1 .081 1.058l-6 7a.75.75 0 0 1-1.1.042l-3.5-3.5A.75.75 0 0 1 4.03 6.97l2.928 2.927l5.473-6.385a.75.75 0 0 1 1.057-.081Z" clip-rule="evenodd"/></svg> Click and Collect inom 1 timme</p>
+    </div>
+  {% endif %}
+
 </section>
 
 {% schema %}

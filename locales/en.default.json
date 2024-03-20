@@ -199,7 +199,7 @@
         "one": "{{ product_count }} of {{ count }} product",
         "other": "{{ product_count }} of {{ count }} products"
       },
-      "product_count_simple": {
+      "productproduct-form_count_simple": {
         "one": "{{ count }} product",
         "other": "{{ count }} products"
       },
@@ -277,7 +277,7 @@
       }
     },
     "cart": {
-      "title": "Your cart",
+      "title": "Cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "estimated_total": "Estimated total",

@@ -1,0 +1,134 @@
+
+
+.product_wrapper{
+
+    .product__media-wrapper{
+        margin-top:-100px;
+       
+    }
+
+
+.animate--slide-in{
+    margin-top: -50px;
+
+    h1{
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .price-item--regular{
+        font-weight: bold;
+        padding-top: -20px;
+    }
+
+    .form__label{
+        font-size: 16px;
+        color:black;
+        font-weight: normal;
+    }
+
+ 
+
+
+
+
+    .product-form__input--pill{
+
+        
+            label[template--16820981203129__main-2-0]{
+                border-radius:unset;
+            }
+
+            label[template--16820981203129__main-2-1]{
+                border-radius:unset;
+            }
+     
+    }
+
+
+    .click-and-collect-btn{
+        width: 300px;
+        height: 44px;
+        color: black;
+        background-color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border: 1px solid black;
+    }
+
+
+}
+.heart-icon-product{
+    position:relative;
+    top: 55px;
+    left: 300px;
+    width: 20px;
+    height:20px;
+}
+
+.info-text-shopping{
+    margin-left: 50px;
+
+    .shop-now-text{
+        font-size: 12px;
+
+        .klarna-text{
+            font-weight: bold;
+        }
+
+        .read-more-text{
+            text-decoration:underline;
+        }
+
+    }
+
+    .text-with-icon{
+
+        font-size: 18px;
+
+    }
+}
+
+
+.grid--peek{
+    margin-top: 100px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 740px) {
+    .product_wrapper {
+
+    .heart-icon-product{
+        position:relative;
+        top: 50px;
+        left: 560px;
+    
+    }
+
+    .click-and-collect-btn{
+        
+        width: 440px;
+        height: 44px;
+        color: black;
+        background-color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border: 1px solid black;
+    }
+
+ 
+
+    .grid--peek{
+        margin-top: 50px;
+    }
+       
+    }
+
+
+
+  }

@@ -1,0 +1,28 @@
+
+
+.cart_wrapper{
+
+   
+
+    display:flex;
+    width: calc(100% - 200px);
+    margin:auto;
+    padding-top: 50px;
+    max-width: 1200px;
+
+    cart-items{
+        padding:0;
+    width:90%;
+
+    
+    .page-width{
+        margin:0;
+        padding:0;
+        width: 100%;
+        max-width:unset;
+
+    }
+
+    }
+
+}
