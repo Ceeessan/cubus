@@ -83,19 +83,21 @@
       help_text: label_unavailable
     %}
   {%- elsif picker_type == 'button' -%}
-    <input
-      type="radio"
-      id="{{ input_id }}"
-      name="{{ option.name }}"
-      value="{{ value | escape }}"
-      form="{{ product_form_id }}"
-      {% if option.selected_value == value %}
-        checked
-      {% endif %}
-      {% if option_disabled %}
-        class="disabled"
-      {% endif %}
-    >
+<input
+  type="radio"
+  id="{{ input_id }}"
+  name="{{ option.name }}"
+  value="{{ value | escape }}"
+  form="{{ product_form_id }}"
+  {% if option.selected_value == product.color %}
+    checked
+  {% endif %}
+  {% if option_disabled %}
+    class="disabled"
+  {% endif %}
+  class="color-radio"
+>
+
     <label for="{{ input_id }}">
       {{ value -}}
       {{ label_unavailable }}

@@ -279,10 +279,9 @@
             display:flex;
             flex-direction: column;
             justify-content: center;
-            margin-top: 100px;
+            margin-top: 100px;  
 
-            h3{
-                
+            h3{     
                 margin:0;
                 color:white;
                 font-weight: bold;
@@ -304,17 +303,11 @@
 
             h4{
                 margin:0;
-             
                 color:white;
                 font-size: 22px;
                 text-align: center;
                 z-index: 2;
-                
-
             }
-           
-         
-
         }
 
         .button-container-men{
