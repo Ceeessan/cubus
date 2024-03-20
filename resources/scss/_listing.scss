@@ -88,36 +88,46 @@
 .sort-product-count{
     .product-count{
         margin-top: 20px;
+        .product-count__text{
+            color: black;
+        }
     }
 }
 
 .breadcrumbs {
-    padding: 0 4.5rem;
-
-    .breadcrumb-list {
-        list-style: none; 
-        margin: 0; 
-        
-        .breadcrumb-item {
-            display: inline-block;
-            margin-right: 5px; 
-
-            a {
-                text-decoration: none; 
-                color: #333;
-
-                &:hover{
-                    text-decoration: underline;
-                }
-
-                &:active {
-                    font-weight: bold; 
-                  }
-                  
-            }
+	font-size: .85em;
+	ol {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		&:not(:last-child) {
+			&:after {
+				content: "/\00a0";
+				display: inline-block;
+				padding-left: .75ch;
+				vertical-align: middle;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+        color: #0009;
+        &:hover{
+            text-decoration: underline;
         }
-    }
+	}
+	[aria-current="page"] {
+		color: black;
+    &:hover{
+        text-decoration: none;
+
+    }	
 }
+}
+ 
 
 .card__inner{
     .card__content{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 100%;
   padding: 0;
@@ -389,26 +390,38 @@ header .caption-large {
 .sort-product-count .product-count {
   margin-top: 20px;
 }
+.sort-product-count .product-count .product-count__text {
+  color: black;
+}
 .breadcrumbs {
-  padding: 0 4.5rem;
+  font-size: 0.85em;
 }
-.breadcrumbs .breadcrumb-list {
-  list-style: none;
+.breadcrumbs ol {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
-.breadcrumbs .breadcrumb-list .breadcrumb-item {
+.breadcrumbs li {
   display: inline-block;
-  margin-right: 5px;
 }
-.breadcrumbs .breadcrumb-list .breadcrumb-item a {
+.breadcrumbs li:not(:last-child):after {
+  content: "/ ";
+  display: inline-block;
+  padding-left: 0.75ch;
+  vertical-align: middle;
+}
+.breadcrumbs a {
   text-decoration: none;
-  color: #333;
+  color: rgba(0, 0, 0, 0.6);
 }
-.breadcrumbs .breadcrumb-list .breadcrumb-item a:hover {
+.breadcrumbs a:hover {
   text-decoration: underline;
 }
-.breadcrumbs .breadcrumb-list .breadcrumb-item a:active {
-  font-weight: bold;
+.breadcrumbs [aria-current=page] {
+  color: black;
+}
+.breadcrumbs [aria-current=page]:hover {
+  text-decoration: none;
 }
 .card__inner .card__content {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
