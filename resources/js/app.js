@@ -22,4 +22,10 @@ const clonedProductContainer = productContainer.cloneNode(true);
 
 
 const scrollContainer = document.querySelector('.products-again');
+
 scrollContainer.appendChild(clonedProductContainer);
+
+scrollContainer.appendChild(clonedProductContainer);
+
+
+

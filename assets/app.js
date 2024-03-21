@@ -12,3 +12,11 @@ const productContainer = document.querySelector("slider-component");
 const clonedProductContainer = productContainer.cloneNode(true);
 const scrollContainer = document.querySelector(".products-again");
 scrollContainer.appendChild(clonedProductContainer);
+document.addEventListener("DOMContentLoaded", function() {
+  var labels = document.querySelectorAll(".product-form__input--pill label");
+  console.log("javascript");
+  labels.forEach(function(label) {
+    var buttonText = label.innerText.trim().toLowerCase();
+    label.style.backgroundColor = buttonText;
+  });
+});
