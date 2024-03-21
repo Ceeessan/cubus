@@ -1,5 +1,6 @@
 
 .product_wrapper{
+    
 
     .product__media-wrapper{
         margin-top:-100px;
@@ -130,6 +131,11 @@
 @media screen and (max-width: 740px) {
     .product_wrapper {
         padding-top: 50px;
+
+        .breadcrumbs{
+            padding-bottom: 50px;
+        }
+ 
     
 
         .product__info-wrapper{

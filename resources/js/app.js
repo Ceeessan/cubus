@@ -28,4 +28,3 @@ scrollContainer.appendChild(clonedProductContainer);
 scrollContainer.appendChild(clonedProductContainer);
 
 
-

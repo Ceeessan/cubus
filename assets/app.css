@@ -531,6 +531,9 @@ header .caption-large {
   .product_wrapper {
     padding-top: 50px;
   }
+  .product_wrapper .breadcrumbs {
+    padding-bottom: 50px;
+  }
   .product_wrapper .product__info-wrapper .click-and-collect-btn {
     width: 100% !important;
   }
