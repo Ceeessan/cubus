@@ -438,14 +438,50 @@ header .caption-large {
   color: black;
   font-weight: normal;
 }
-.product_wrapper .animate--slide-in .product-form__input--pill label[template--16820981203129__main-2-0] {
-  border-radius: unset;
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-0] {
+  border-radius: 0%;
+  border: 1px solid black;
+  color: rgb(117, 117, 117);
+  font-weight: bold;
 }
-.product_wrapper .animate--slide-in .product-form__input--pill label[template--16820981203129__main-2-1] {
-  border-radius: unset;
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-1] {
+  border-radius: 0%;
+  border: 1px solid black;
+  color: rgb(117, 117, 117);
+  font-weight: bold;
+}
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-2] {
+  border-radius: 0%;
+  border: 1px solid black;
+  color: rgb(117, 117, 117);
+  font-weight: bold;
+}
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-3] {
+  border-radius: 0%;
+  border: 1px solid black;
+  color: rgb(117, 117, 117);
+  font-weight: bold;
+}
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-4] {
+  border-radius: 0%;
+  border: 1px solid black;
+  color: rgb(117, 117, 117);
+  font-weight: bold;
+}
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-5] {
+  border-radius: 0%;
+  border: 1px solid black;
+  color: rgb(117, 117, 117);
+  font-weight: bold;
+}
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-6] {
+  border-radius: 0%;
+  border: 1px solid black;
+  color: rgb(117, 117, 117);
+  font-weight: bold;
 }
 .product_wrapper .animate--slide-in .click-and-collect-btn {
-  width: 300px;
+  width: 100%;
   height: 44px;
   color: black;
   background-color: white;
@@ -479,38 +515,63 @@ header .caption-large {
   margin-top: 100px;
 }
 @media screen and (max-width: 740px) {
+  .product_wrapper {
+    padding-top: 50px;
+  }
+  .product_wrapper .product__info-wrapper .click-and-collect-btn {
+    width: 100% !important;
+  }
   .product_wrapper .heart-icon-product {
     position: relative;
     top: 50px;
-    left: 560px;
-  }
-  .product_wrapper .click-and-collect-btn {
-    width: 440px;
-    height: 44px;
-    color: black;
-    background-color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: 1px solid black;
+    left: 350px !important;
   }
   .product_wrapper .grid--peek {
     margin-top: 50px;
   }
+  .product_wrapper .info-text-shopping {
+    margin-left: 20px;
+  }
 }
-.cart_wrapper {
+.cart_wrapper .underlined-link {
+  display: none;
+}
+.cart_wrapper .cart-item__details {
   display: flex;
-  width: calc(100% - 200px);
-  margin: auto;
-  padding-top: 50px;
-  max-width: 1200px;
+  flex-direction: column;
+  width: 60px;
+  padding-left: 5px;
 }
-.cart_wrapper cart-items {
-  padding: 0;
-  width: 90%;
+.cart_wrapper .cart-item__quantity {
+  padding-left: 0px;
 }
-.cart_wrapper cart-items .page-width {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: unset;
+.cart_wrapper .cart__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.cart_wrapper .cart__footer .cart__blocks {
+  margin-left: 0px;
+}
+.cart_wrapper .cart__footer .tax-note {
+  text-align: center;
+  align-items: center;
+}
+.cart_wrapper .cart__footer .totals {
+  text-align: center;
+  padding-right: 100px;
+}
+.cart_wrapper .cart__footer .cart__checkout-button {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.cart_wrapper .cart__footer .XLcXEW3RnM9fyU7k7fvC {
+  display: none;
+}
+@media screen and (max-width: 740px) {
+  .cart_wrapper .cart__footer .totals {
+    padding-right: unset;
+  }
 }
