@@ -6,6 +6,17 @@
             font-weight: bold;
         }
     }
+
+    .footer-block--newsletter{
+        display: flex;
+        justify-content: flex-start;
+
+        svg{
+            color: rgba(0, 0, 0, 0.54);
+            width:30px;
+            height:30px;
+        }
+    }
 }
 
 .footer__column.footer__column--info{
@@ -18,3 +29,4 @@
         padding: 8px 0;
     }
 }
+
