@@ -32,6 +32,15 @@ header .caption-large {
 .footer .footer-block h2 {
   font-weight: bold;
 }
+.footer .footer-block--newsletter {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .footer-block--newsletter svg {
+  color: rgba(0, 0, 0, 0.54);
+  width: 30px;
+  height: 30px;
+}
 .footer__column.footer__column--info {
   align-items: center;
   border: 1px solid rgb(224, 224, 224);
