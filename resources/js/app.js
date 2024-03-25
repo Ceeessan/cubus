@@ -28,3 +28,14 @@ scrollContainer.appendChild(clonedProductContainer);
 scrollContainer.appendChild(clonedProductContainer);
 
 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var label = document.getElementById("template--16820883488953__main-1-0");
+    if (label) {
+        label.style.backgroundColor = "green !important";
+    } else {
+        console.error("Element not found!");
+    }
+});

@@ -29,6 +29,10 @@
 
     .product-form__input--pill{ 
 
+        label[for="template--16820883488953__main-1-0"]{
+            background-color: red;
+        }
+
         label[for="template--16820981203129__main-2-0"] {
         border-radius: 0%;
         border: 1px solid black;
@@ -124,6 +128,16 @@
 .grid--peek{
     margin-top: 100px;
 }
+
+.product__column-sticky{
+
+    .quick-add-hidden{
+        display:none;
+    }
+}
+
+
+
 }
 
 

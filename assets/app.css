@@ -460,6 +460,9 @@ header .caption-large {
   color: black;
   font-weight: normal;
 }
+.product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820883488953__main-1-0] {
+  background-color: red;
+}
 .product_wrapper .animate--slide-in .product-form__input--pill label[for=template--16820981203129__main-2-0] {
   border-radius: 0%;
   border: 1px solid black;
@@ -535,6 +538,9 @@ header .caption-large {
 }
 .product_wrapper .grid--peek {
   margin-top: 100px;
+}
+.product_wrapper .product__column-sticky .quick-add-hidden {
+  display: none;
 }
 @media screen and (max-width: 740px) {
   .product_wrapper {
